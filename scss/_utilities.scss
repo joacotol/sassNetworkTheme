@@ -101,6 +101,28 @@
   }
 }
 
+// ALERTS
+.alert {
+  padding: 0.8rem;
+  margin: 1rem;
+  opacity: 0.9;
+  background: $light-color;
+  color: #333;
+
+  &.alert-primary {
+    @include setBackground($primary-color);
+  }
+  &.alert-dark {
+    @include setBackground($dark-color);
+  }
+  &.alert-success {
+    @include setBackground($success-color);
+  }
+  &.alert-danger {
+    @include setBackground($danger-color);
+  }
+}
+
 .dark-overlay {
   height: 100%;
   width: 100%;
