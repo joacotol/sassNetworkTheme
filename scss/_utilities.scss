@@ -30,6 +30,16 @@
   color: $primary-color;
 }
 
+.round-img {
+  border-radius: 50%;
+}
+
+.line {
+  height: 1px;
+  background: #ccc;
+  margin: 1.5rem 0;
+}
+
 // BACKGROUNDS
 .bg {
   &-primary {
@@ -119,6 +129,29 @@
     @include setBackground($success-color);
   }
   &.alert-danger {
+    @include setBackground($danger-color);
+  }
+}
+
+// BADGES
+.badge {
+  font-size: 0.8rem;
+  padding: 0.1rem;
+  text-align: center;
+  margin: 0.3rem;
+  background: $light-color;
+  color: #333;
+
+  &-primary {
+    @include setBackground($primary-color);
+  }
+  &-dark {
+    @include setBackground($dark-color);
+  }
+  &-success {
+    @include setBackground($success-color);
+  }
+  &-danger {
     @include setBackground($danger-color);
   }
 }
